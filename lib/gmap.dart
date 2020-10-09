@@ -49,7 +49,7 @@ class _GmapState extends State<Gmap> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.purple, title: Text('Google Maps Tutorial')),
+          backgroundColor: Colors.yellow, title: Text('Google Maps Tutorial')),
       body: crearMapa(),
       //floatingActionButton: botonesFlotantes(),
     );
@@ -93,7 +93,7 @@ class _GmapState extends State<Gmap> {
 
   Widget crearMapa() {
     return MapboxMap(
-      accessToken: LocationService.MAPBOX_ACCESS_TOKEN,
+      accessToken: , //put your access tokon here
       styleString: selectedStyle,
       onMapCreated: _onMapCreated,
       myLocationEnabled: true,
